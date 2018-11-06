@@ -1,0 +1,10 @@
+<resources>
+   // <string name="app_name">zuoye1</string>
+    <string-array name = "subjects">
+        <item>计算机科学与技术</item>
+        <item>物联网工程</item>
+        <item>软件工程</item>
+        <item>网络工程</item>
+        <item>智能科学与技术</item>
+    </string-array>>
+</resources>
