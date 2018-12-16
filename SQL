@@ -1,0 +1,4 @@
+select employees.emp_no,salaries.salary from employees,salaries 
+where employees.hire_date = salaries.from_date and
+employees.emp_no = salaries.emp_no 
+order by employees.emp_no desc
