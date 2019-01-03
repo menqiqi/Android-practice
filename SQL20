@@ -1,0 +1,11 @@
+//Employee 表包含所有员工，他们的经理也属于员工。每个员工都有一个 Id，此外还有一列对应员工的经理的 Id
+
+//Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, ManagerId int)
+//Truncate table Employee
+//insert into Employee (Id, Name, Salary, ManagerId) values ('1', 'Joe', '70000', '3')
+//insert into Employee (Id, Name, Salary, ManagerId) values ('2', 'Henry', '80000', '4')
+//insert into Employee (Id, Name, Salary, ManagerId) values ('3', 'Sam', '60000', 'None')
+//insert into Employee (Id, Name, Salary, ManagerId) values ('4', 'Max', '90000', 'None')
+
+# Write your MySQL query statement below
+select e1.Name as Employee from Employee as e1 ,Employee as e2 where e1.ManagerId=e2.Id AND e1.Salary>e2.Salary
