@@ -1,0 +1,3 @@
+# Write your MySQL query statement below
+select (case when mod(id,2)=0 then id-1 when mod(id,2)!=0 and id!=counta then id+1 when mod(id,2)!=0 
+and id=counta then id end )as id,student from seat,(select count(a.student) as counta from seat a) as seat_counts order by id ;
