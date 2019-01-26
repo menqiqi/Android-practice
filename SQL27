@@ -1,0 +1,4 @@
+//Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。
+
+# Write your MySQL query statement below
+select d.Name as Department, e.Name as Employee, e.Salary from Department d inner join Employee e on d.Id = e.DepartmentId and e.Salary >= (select max(Salary) from Employee where DepartmentId = d.Id)
